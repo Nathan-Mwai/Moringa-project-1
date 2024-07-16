@@ -1,0 +1,16 @@
+My application acts like an online shopping platform where a user can purchase an item. Users can add items to a car as well as remove the items. The admin(my raw project) can add items as well as delete items.
+
+I'll be using CSS as my main styling, HTML will be my front end area and JavaScript will be my backend. I'll be using my personal JSON API to store the information that will be run in the code.
+
+THe API will be a db.json file in my repository and will be working towards it as soon as possible.
+
+Some challenges I expect to face is :
+(a) To have a prompt before page loads that inputs your username on the top left part of the page.
+(b) To make sure that I use the right event listeners to work on my function
+
+How I will approach my project:
+(a) Using a HTML to be my frontEnd page, CSS for styling my page with the help of `TailWind`and JavaScript to use as my backend together with a json for storing the page's information
+(b) The page will only have 5 files hence only one HTML file to prevent redirects to different pages
+(c) There will only be three different event listeners to the code
+(d) Using the array iteration methods `forEach` and `map` at the article area to display different goods that can be bought
+(e) My JavaScript will be filled with different functions hence I will name them well so as to be able to navigate the way. There will also be comment in my code to show the how the function works and applied.

@@ -1,0 +1,136 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "flour",
+      "images": "images/flour.png",
+      "quantity": "2KG",
+      "price": "100"
+    },
+    {
+      "id": "2",
+      "name": "Sugar",
+      "images": "images/flour.png",
+      "quantity": "2KG",
+      "price": "200"
+    },
+    {
+      "id": "3",
+      "name": "mixer",
+      "images": "images/mixer.jpg",
+      "price": "2000"
+    },
+    {
+      "id": "4",
+      "name": "eggs",
+      "images": "images/eggs.avif",
+      "quantity": "30",
+      "price": "500"
+    },
+    {
+      "id": "5",
+      "name": "water",
+      "images": "images/water.avif",
+      "quantity": "500ml",
+      "price": "50"
+    },
+    {
+      "id": "6",
+      "name": "cocoa",
+      "images": "images/cocoa.avif",
+      "quantity": "500g",
+      "price": "70"
+    },
+    {
+      "id": "7",
+      "name": "milk",
+      "images": "images/milk.avif",
+      "quantity": "500g",
+      "price": "55"
+    },
+    {
+      "id": "8",
+      "name": "Vanilla Extract",
+      "images": "images/vanilla.avif",
+      "quantity": "500g",
+      "price": "100"
+    },
+    {
+      "id": "9",
+      "name": "Mint Extract",
+      "images": "images/mint.avif",
+      "quantity": "500g",
+      "price": "100"
+    },
+    {
+      "id": "10",
+      "name": "Baking pots",
+      "images": "images/bakingpan.avif",
+      "quantity": "7",
+      "price": "5000"
+    },
+    {
+      "id": "11",
+      "name": "Cupcake papers",
+      "images": "images/cupcakepapers.avif",
+      "quantity": "3 dozen",
+      "price": "1200"
+    },
+    {
+      "id": "12",
+      "name": "Baking Recipes",
+      "images": "images/RecipeBook.avif",
+      "quantity": "1",
+      "price": "1200"
+    },
+    {
+      "id": "13",
+      "name": "Measuring cup",
+      "images": "images/measuring-jar.avif",
+      "quantity": "1",
+      "price": "600"
+    },
+    {
+      "id": "14",
+      "name": "Measuring Spoon",
+      "images": "images/measuring-spoon.jpg",
+      "quantity": "8 spoons",
+      "price": "1000"
+    },
+    {
+      "id": "15",
+      "name": "Some spices",
+      "quantity": "10",
+      "images": "images/spices.avif",
+      "price": "3000"
+    },
+    {
+      "id": "16",
+      "name": "Syrup",
+      "images": "images/syrup.avif",
+      "quantity": "4",
+      "price": "2400"
+    },
+    {
+      "id": "17",
+      "name": "Small Oven",
+      "images": "images/oven.avif",
+      "quantity":  "1",
+      "price": "35000"
+    },
+    {
+      "id": "18",
+      "name": "Butter",
+      "images": "images/butter.avif",
+      "quantity": "1KG",
+      "price": "1000"
+    },
+    {
+      "id": "19",
+      "name": "cake decorators",
+      "images": "images/cakeDecorators.avif",
+      "quantity": "3",
+      "price": "1300"
+    }
+  ]
+}
