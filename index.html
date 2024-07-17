@@ -9,17 +9,65 @@
 <body>
     <header>
         <h1>Mishi Baking Shop</h1>
-        <nav>
-            <!-- usenrname appears here -->
-            <!-- cart zone -->
+            <div class="menu_icon_box">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <div class="safe">
+              <nav>
+                <ul>
+                <li id="username"></li>
+            <li><a href="#items">Items</a></li>
+            <li><a href="#cart">Cart</a></li>
              <!-- Checking out -->
               <!-- contact area -->
                <!--  -->
-            <h1 id="userName"></h1>
-            <ul></ul>
-        </nav>
+                </ul>
+              </nav>
+            </div>
+            <script defer>
+                const menu_icon_box = document.querySelector('.menu_icon_box');
+                const safe = document.querySelector('.safe');
+                
+                menu_icon_box.addEventListener('click', () => {
+                  menu_icon_box.classList.toggle('active');
+                  safe.classList.toggle('active');
+                });
+              
+                document.addEventListener('click', (e) => {
+                  if (!menu_icon_box.contains(e.target) && !safe.contains(e.target)) {
+                    menu_icon_box.classList.remove('active');
+                    safe.classList.remove('active');
+                  }
+                });
+              </script>
     </header>
-    <div id="items"></div>
+    <div id="items">
+        <p id="intro">Welcome to Mishi Bakers, where every kitchen becomes a canvas and every baker an artist. Whether you're a seasoned pro or a flour-dusted dreamer, our shelves offer top-tier tools to bring your baking visions to life.
+
+            🧁 Discover Our Sweet Symphony:
+            
+            Flour Power: Organic bread flour to gluten-free blends—your perfect doughy canvas awaits.
+            
+            Whisks & Wonders: Stainless steel, silicone, and balloon magic await to elevate your culinary creations.
+            
+            Pans with Personality: Non-stick wonders, springform sagas, and muffin tin epics—each with tales of golden crusts and oozy centers.
+            
+            Spatulas & Serenades: Glide through batter effortlessly with our silicone, wood, and heat-resistant spatulas.
+            
+            Oven Ballet: Convection queens and double-decker divas—turning cookies into croissants with buttery stardust.
+            
+            Sprinkles & Stardust: Edible glitter, rainbow confetti, and sugar pearls for desserts that sparkle.
+            
+            🎁 The Sweet Bonus:
+            
+            Every purchase unlocks our secret recipe vault—think cinnamon swirls, chocolate lava cakes, and buttercream galaxies. Our customer service team? They're fairy godmothers, granting wishes and fixing baking mishaps.
+            
+            🌈 Join the Flour Revolution:
+            
+            Visit us online where aprons are capes and measuring cups measure joy. Let's whisk up memories, one cupcake at a time. 🌟</p>
+    </div>
     <div id="cart"></div>
     <div id="checkout"></div>
     <script src="./index.js"></script>

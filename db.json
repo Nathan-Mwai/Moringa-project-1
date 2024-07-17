@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "1",
-      "name": "flour",
+      "name": "Flour",
       "images": "images/flour.png",
       "quantity": "2KG",
       "price": "100"
@@ -10,40 +10,41 @@
     {
       "id": "2",
       "name": "Sugar",
-      "images": "images/flour.png",
+      "images": "images/sugar.png",
       "quantity": "2KG",
       "price": "200"
     },
     {
       "id": "3",
-      "name": "mixer",
+      "name": "Mixer",
+      "quantity": "1",
       "images": "images/mixer.jpg",
       "price": "2000"
     },
     {
       "id": "4",
-      "name": "eggs",
+      "name": "Eggs",
       "images": "images/eggs.avif",
       "quantity": "30",
       "price": "500"
     },
     {
       "id": "5",
-      "name": "water",
+      "name": "Water",
       "images": "images/water.avif",
       "quantity": "500ml",
       "price": "50"
     },
     {
       "id": "6",
-      "name": "cocoa",
+      "name": "Cocoa",
       "images": "images/cocoa.avif",
       "quantity": "500g",
       "price": "70"
     },
     {
       "id": "7",
-      "name": "milk",
+      "name": "Milk",
       "images": "images/milk.avif",
       "quantity": "500g",
       "price": "55"
@@ -64,7 +65,7 @@
     },
     {
       "id": "10",
-      "name": "Baking pots",
+      "name": "Baking Pots",
       "images": "images/bakingpan.avif",
       "quantity": "7",
       "price": "5000"
@@ -99,7 +100,7 @@
     },
     {
       "id": "15",
-      "name": "Some spices",
+      "name": "Box Of Spices",
       "quantity": "10",
       "images": "images/spices.avif",
       "price": "3000"
@@ -115,7 +116,7 @@
       "id": "17",
       "name": "Small Oven",
       "images": "images/oven.avif",
-      "quantity":  "1",
+      "quantity": "1",
       "price": "35000"
     },
     {
@@ -127,7 +128,7 @@
     },
     {
       "id": "19",
-      "name": "cake decorators",
+      "name": "cake Decorators",
       "images": "images/cakeDecorators.avif",
       "quantity": "3",
       "price": "1300"
