@@ -13,7 +13,7 @@ function promptForCredentials() {
   } else {
     // If authentication fails, redirect or show an error message
     alert("Invalid username or password. Please try again.");
-//  The user cannot view the products 
+    //  The user cannot view the products
   }
 }
 
@@ -45,9 +45,9 @@ function addsProducts(product) {
 
   // Add mouseover event listener to the product card
   card.addEventListener("mouseover", () => {
-        //Change background color on mouseover
-    card.style.backgroundColor = "#f0f0f0"; 
-    // Change the font family of the name of the product 
+    //Change background color on mouseover
+    card.style.backgroundColor = "#f0f0f0";
+    // Change the font family of the name of the product
     (card.querySelector(`h3`).style.fontFamily = "Kalnia Glaze"), `serif`;
     // Creates an animation that plays when you hover in a card
     card.querySelector(
@@ -72,7 +72,7 @@ function addsProducts(product) {
 
 // Function to fetch products from the server
 function getAllItems() {
-  fetch("http://localhost:3000/products")
+  fetch("https://project-1-api.vercel.app/products")
     .then((res) => res.json())
     .then((products) => products.forEach((product) => addsProducts(product)))
     .catch((err) => console.error("Error fetching products:", err));
@@ -147,11 +147,11 @@ function updateCartDisplay() {
   // Display total price of the cart both in the cart and the nav section
   const totalElement = document.createElement("div");
   totalElement.textContent = `Total: $${totalPrice}`;
-  const displayPrice = document.querySelector(`#displayPrice`)
-  displayPrice.textContent = `Total: $${totalPrice}`
+  const displayPrice = document.querySelector(`#displayPrice`);
+  displayPrice.textContent = `Total: $${totalPrice}`;
   cartFile.appendChild(totalElement);
 
-  // Button to clear the cart 
+  // Button to clear the cart
   // This also clears on the nav
   const btnClear = document.createElement("button");
   btnClear.className = "clear";
