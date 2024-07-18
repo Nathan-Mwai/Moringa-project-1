@@ -1,14 +1,16 @@
+/* This imports fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Lobster&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sevillana&display=swap');
 
+/* This enables smooth transition using scroll */
 * {
   scroll-behavior: smooth;
 }
 
-#username {
-  font-family: "Lobster", sans-serif;
-  font-size: 40px;
+body{
+    background-color: #ACDCF9;
 }
 
+/* Styles the heading */
 h1 {
   text-align: center;
   font-family: "Lobster", sans-serif;
@@ -71,7 +73,6 @@ h1 {
 
 nav {
   padding-top: 100px;
-  background-color: cadetblue;
   position: fixed;
 }
 
@@ -99,6 +100,16 @@ nav ul li a {
   text-decoration: none;
 }
 
+#username {
+    font-family: "Lobster", sans-serif;
+    font-size: 40px;
+  }
+
+#displayPrice{
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+}
+
 /* NAV ENDS */
 
 #intro{
@@ -114,7 +125,7 @@ img {
 
 #items {
   text-align: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-wrap: wrap;
   /* height: 330vh; */
@@ -124,10 +135,12 @@ img {
   align-self: center;
   align-items: center;
   margin: 0 370px auto;
+  background-color: #FFFFFF;
+  border-radius: 5px;
 }
 
 .product-card {
-  border: 2px solid black;
+  border: 2px solid rgb(226, 208, 208);
   border-radius: 10px;
   margin: 30px;
   /* width: 10vw; */
@@ -146,10 +159,9 @@ button.add-to-cart {
   border-radius: 20px;
   font-family: "Dancing Script", cursive;
   font-weight: 700;
-
-  /* font-style: italic; */
   font-size: 25px;
 }
+
 @keyframes myAnim {
   0%,
   50%,
@@ -166,24 +178,28 @@ button.add-to-cart {
 /* CART ZONE */
 #cart h2 {
   margin-top: 0;
+  font-family: "Lobster", sans-serif;
   text-align: center;
+  font-size: 27px;
 }
+
 #cart {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-left: 500px;
   margin-right: 500px;
 }
+
 #file {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-top: 30px;
   display: flex;
+  font-family: "PT Serif", serif;
   /* justify-content: center; */
   flex-direction: column;
   align-items: center;
-}
-
-#file {
-  border: 2px solid black;
+background-color: #FFFFFF;
+  /* border: 2px solid black; */
+  border-radius: 4px;
   padding: 20px;
   width: 500px; /* Adjust width as needed */
   margin: 0 auto; /* Center horizontally */
@@ -192,6 +208,7 @@ button.add-to-cart {
 .cart-item {
   display: flex;
   margin-bottom: 10px;
+  /* background-color: #204458; */
 }
 
 .cart-item img {
@@ -210,6 +227,7 @@ button.add-to-cart {
   font-size: 30px;
   padding: 5px 10px;
   background-color: #333333;
+  border-radius: 30px;
   color: white;
   border: none;
   cursor: pointer;
@@ -217,7 +235,9 @@ button.add-to-cart {
 
 .clear,
 .purchase {
+    border-radius: 50px;
   display: block;
+  font-family: "PT Serif", serif;
   width: 100%;
   margin-top: 10px;
   padding: 10px;
@@ -237,33 +257,48 @@ button.add-to-cart {
   opacity: 0.8;
 }
 
-/* Dropdown menu styles */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+#contacts {
+    background-color: #4c94bb;
+    height: 30vh;
+    width: 100vw;
+    padding: 20px 10px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+  }
+  
+#contacts h3{
+    text-align: center;
+  }
 
-.dropdown-menu li {
-  display: block;
-}
+  .quote {
+    text-align: center;
+  }
+  
+  address a i {
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+  }
 
-.dropdown-menu li a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-menu li a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show dropdown on hover */
-nav ul li:hover .dropdown-menu {
-  display: block;
-}
+  address a i:hover {
+    transform: scale(1.3);
+    color: #faedcd;
+  }
+  
+  address {
+    /* width: 650px;
+      height: 300px;  */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    overflow: hidden;
+  }
+  
+  address i {
+    color: #204458;
+  }

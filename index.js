@@ -3,17 +3,17 @@ function promptForCredentials() {
   const username = prompt("Enter your username:");
   const password = prompt("Enter your password:");
 
-  // Perform authentication here (dummy example for demonstration)
+  // Perform authentication here
   if (username === "admin" && password === "password") {
     // If authentication succeeds, proceed to load products
     getAllItems();
     const filler = document.querySelector(`#username`);
+    // The name of the user is then filled in the nav section
     filler.textContent = ` Welcome ${username}`;
   } else {
     // If authentication fails, redirect or show an error message
     alert("Invalid username or password. Please try again.");
-    // Optionally, you can redirect to another page or handle accordingly
-    // Example: window.location.href = "login.html";
+//  The user cannot view the products 
   }
 }
 
@@ -40,13 +40,16 @@ function addsProducts(product) {
     addItemToCart(product);
     updateCartDisplay();
 
-    alert(`${product.name} added to cart`);
+    // alert(`${product.name} added to cart`);
   });
 
   // Add mouseover event listener to the product card
   card.addEventListener("mouseover", () => {
-    card.style.backgroundColor = "#f0f0f0"; // Example: Change background color on mouseover
+        //Change background color on mouseover
+    card.style.backgroundColor = "#f0f0f0"; 
+    // Change the font family of the name of the product 
     (card.querySelector(`h3`).style.fontFamily = "Kalnia Glaze"), `serif`;
+    // Creates an animation that plays when you hover in a card
     card.querySelector(
       `button.add-to-cart`
     ).style.animation = `myAnim 2s ease 0s infinite normal forwards`;
@@ -54,8 +57,11 @@ function addsProducts(product) {
 
   // Add mouseout event listener to the product card
   card.addEventListener("mouseout", () => {
-    card.style.backgroundColor = ""; // Example: Restore background color on mouseout
+    //Restore background color on mouseout
+    card.style.backgroundColor = "";
+    //Restore font family on mouseout
     card.querySelector(`h3`).style.fontFamily = ``;
+    // Stop animation on mouseout
     card.style.animation = ``;
     card.querySelector(`button.add-to-cart`).style.animation = ``;
   });
@@ -106,7 +112,8 @@ function updateCartDisplay() {
 
     // Image
     const img = document.createElement("img");
-    img.src = item.images; // Assuming item.images contains the path to the image
+    // item.images contains the path to the image
+    img.src = item.images;
     img.alt = `${item.name} Image`;
     cartItem.appendChild(img);
 
@@ -137,12 +144,15 @@ function updateCartDisplay() {
     totalPrice += item.price * item.quantity;
   });
 
-  // Display total price of the cart
+  // Display total price of the cart both in the cart and the nav section
   const totalElement = document.createElement("div");
   totalElement.textContent = `Total: $${totalPrice}`;
+  const displayPrice = document.querySelector(`#displayPrice`)
+  displayPrice.textContent = `Total: $${totalPrice}`
   cartFile.appendChild(totalElement);
 
-  // Button to clear the cart
+  // Button to clear the cart 
+  // This also clears on the nav
   const btnClear = document.createElement("button");
   btnClear.className = "clear";
   btnClear.textContent = "Clear Cart";
